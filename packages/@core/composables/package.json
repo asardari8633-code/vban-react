@@ -1,0 +1,19 @@
+{
+  "name": "@vben-core/composables",
+  "version": "5.7.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@vben-core/shared": "*"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1"
+  }
+}

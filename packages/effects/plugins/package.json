@@ -1,0 +1,22 @@
+{
+  "name": "@vben/plugins",
+  "version": "5.7.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./echarts": "./src/echarts/index.ts"
+  },
+  "dependencies": {
+    "@vben/preferences": "*",
+    "@vben-core/composables": "*",
+    "echarts": "^6.1.0"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1"
+  }
+}

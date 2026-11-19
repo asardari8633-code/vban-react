@@ -1,0 +1,15 @@
+{
+  "auth": {
+    "login": "ورود",
+    "register": "ثبت‌نام",
+    "codeLogin": "ورود با کد",
+    "qrcodeLogin": "ورود با کد QR",
+    "forgetPassword": "فراموشی رمز عبور",
+    "profile": "پروفایل"
+  },
+  "dashboard": {
+    "title": "داشبورد",
+    "analytics": "تحلیل‌ها",
+    "workspace": "میز کار"
+  }
+}

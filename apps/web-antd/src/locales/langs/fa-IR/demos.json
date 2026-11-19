@@ -1,0 +1,47 @@
+{
+  "title": "نمونه‌ها",
+  "antd": "Ant Design",
+  "access": {
+    "frontendPermissions": "دسترسی سمت کلاینت",
+    "backendPermissions": "دسترسی سمت سرور",
+    "pageAccess": "دسترسی صفحه",
+    "buttonControl": "کنترل دکمه‌ها",
+    "menuVisible403": "منوی قابل مشاهده (۴۰۳)",
+    "superVisible": "فقط برای Super",
+    "adminVisible": "فقط برای Admin",
+    "userVisible": "فقط برای User"
+  },
+  "nested": {
+    "title": "منوی تودرتو",
+    "menu1": "منوی ۱",
+    "menu2": "منوی ۲",
+    "menu2_1": "منوی ۲-۱",
+    "menu3": "منوی ۳",
+    "menu3_1": "منوی ۳-۱",
+    "menu3_2": "منوی ۳-۲",
+    "menu3_2_1": "منوی ۳-۲-۱"
+  },
+  "features": {
+    "title": "قابلیت‌ها",
+    "tabs": "API زبانه‌ها",
+    "tabDetail": "جزئیات زبانه",
+    "keepAlive": "نگه‌داری صفحه (Keep-Alive)",
+    "loginExpired": "انقضای ورود",
+    "icons": "آیکون‌ها",
+    "watermark": "واترمارک",
+    "fullScreen": "تمام‌صفحه",
+    "hideChildrenInMenu": "پنهان کردن زیرمنو",
+    "badge": "نشان منو"
+  },
+  "breadcrumb": {
+    "navigation": "مسیرنما"
+  },
+  "vben": {
+    "title": "پروژه",
+    "about": "درباره",
+    "document": "مستندات",
+    "antdv": "نسخه‌ی Ant Design Vue",
+    "naive-ui": "نسخه‌ی Naive UI",
+    "element-plus": "نسخه‌ی Element Plus"
+  }
+}

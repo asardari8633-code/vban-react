@@ -1,0 +1,19 @@
+.tabs-chrome__item:not(.is-active):hover + .tabs-chrome__item .tabs-chrome__divider,
+.tabs-chrome__item:not(.is-active):hover .tabs-chrome__divider,
+.tabs-chrome__item.is-active + .tabs-chrome__item .tabs-chrome__divider {
+  opacity: 0;
+}
+
+.tabs-chrome__item:not(.is-active):hover .tabs-chrome__background {
+  padding-bottom: 2px;
+}
+
+.tabs-chrome__item:not(.is-active):hover .tabs-chrome__background-content {
+  margin-inline: 2px;
+  background-color: hsl(var(--accent));
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.tabs-chrome__item[draggable='true'] {
+  cursor: pointer;
+}

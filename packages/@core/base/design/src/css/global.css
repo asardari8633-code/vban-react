@@ -1,0 +1,125 @@
+/* جهت متن: در RTL انیمیشن‌های افقی برعکس می‌شوند */
+:root {
+  --vben-dir-factor: 1;
+}
+
+:root[dir='rtl'] {
+  --vben-dir-factor: -1;
+}
+
+html {
+  height: 100%;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base, 16px);
+  line-height: 1.5;
+  color: hsl(var(--foreground));
+  text-size-adjust: 100%;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: hsl(var(--background));
+}
+
+#app,
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+::view-transition-new(root),
+::view-transition-old(root) {
+  mix-blend-mode: normal;
+  animation: none;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2147483646;
+}
+
+html.dark::view-transition-old(root) {
+  z-index: 2147483646;
+}
+
+html.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: hsl(var(--input-placeholder)) !important;
+  opacity: 1;
+}
+
+input:-webkit-autofill {
+  border: none;
+  box-shadow: 0 0 0 1000px transparent inset;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+/* حالت رنگ‌کور و خاکستری */
+.invert-mode {
+  filter: invert(80%);
+}
+
+.grayscale-mode {
+  filter: grayscale(100%);
+}
+
+.z-popup {
+  z-index: var(--popup-z-index);
+}
+
+/* نوار اسکرول ظریف */
+.vben-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border)) transparent;
+}
+
+.vben-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.vben-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 6px;
+}
+
+.vben-scrollbar-hidden {
+  scrollbar-width: none;
+}
+
+.vben-scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* اعداد فارسی برای متن‌هایی که کلاس fa-num دارند */
+.fa-num {
+  font-feature-settings: 'ss01';
+}

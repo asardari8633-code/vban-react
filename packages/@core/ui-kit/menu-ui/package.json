@@ -1,0 +1,22 @@
+{
+  "name": "@vben-core/menu-ui",
+  "version": "5.7.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@vben-core/icons": "*",
+    "@vben-core/typings": "*",
+    "@vben-core/shared": "*"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1",
+    "antd": "^6.7.1"
+  }
+}

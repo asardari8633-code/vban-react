@@ -1,0 +1,23 @@
+{
+  "name": "@vben-core/layout-ui",
+  "version": "5.7.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@vben-core/base-ui": "*",
+    "@vben-core/composables": "*",
+    "@vben-core/icons": "*",
+    "@vben-core/shared": "*",
+    "@vben-core/typings": "*"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1"
+  }
+}

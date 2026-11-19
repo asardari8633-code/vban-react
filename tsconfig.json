@@ -1,0 +1,14 @@
+{
+  "extends": "./internal/tsconfig/base.json",
+  "compilerOptions": {
+    "paths": {
+      "#/*": ["./apps/web-antd/src/*"]
+    }
+  },
+  "include": [
+    "apps/web-antd/src/**/*",
+    "apps/web-antd/vite.config.ts",
+    "packages/**/src/**/*"
+  ],
+  "exclude": ["**/node_modules", "**/dist"]
+}

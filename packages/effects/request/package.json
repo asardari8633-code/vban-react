@@ -1,0 +1,18 @@
+{
+  "name": "@vben/request",
+  "version": "5.7.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@vben/utils": "*",
+    "@vben/locales": "*",
+    "axios": "^1.21.1"
+  }
+}

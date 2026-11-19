@@ -1,0 +1,23 @@
+{
+  "name": "@vben/locales",
+  "version": "5.7.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@vben-core/typings": "*",
+    "i18next": "^27.2.1",
+    "react-i18next": "^18.0.3",
+    "dayjs": "^1.11.23"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1",
+    "antd": "^6.7.1"
+  }
+}

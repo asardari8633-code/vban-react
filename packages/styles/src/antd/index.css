@@ -1,0 +1,130 @@
+/* بازنویسی‌های antd برای هماهنگی با توکن‌های طراحی vben */
+
+.ant-app {
+  height: 100%;
+  font-family: var(--font-family);
+}
+
+/* پیام و اعلان‌ها با فونت سراسری */
+.ant-message,
+.ant-notification,
+.ant-modal,
+.ant-drawer,
+.ant-dropdown,
+.ant-popover,
+.ant-tooltip,
+.ant-select-dropdown,
+.ant-picker-dropdown {
+  font-family: var(--font-family);
+}
+
+/* منوی ناوبری درون sidebar از پس‌زمینه‌ی sidebar استفاده کند */
+.vben-menu.ant-menu,
+.vben-menu.ant-menu .ant-menu-sub.ant-menu-inline {
+  background: transparent;
+}
+
+.vben-menu.ant-menu-inline,
+.vben-menu.ant-menu-vertical {
+  border-inline-end: none !important;
+}
+
+.vben-menu.ant-menu-horizontal {
+  line-height: inherit;
+  border-bottom: none;
+}
+
+.vben-menu.ant-menu-horizontal > .ant-menu-item,
+.vben-menu.ant-menu-horizontal > .ant-menu-submenu {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* حالت گرد منو */
+.vben-menu--rounded.ant-menu-inline .ant-menu-item,
+.vben-menu--rounded.ant-menu-inline .ant-menu-submenu-title,
+.vben-menu--rounded.ant-menu-vertical .ant-menu-item,
+.vben-menu--rounded.ant-menu-vertical .ant-menu-submenu-title {
+  border-radius: calc(var(--radius) + 2px);
+}
+
+.vben-menu--plain.ant-menu-inline .ant-menu-item,
+.vben-menu--plain.ant-menu-inline .ant-menu-submenu-title,
+.vben-menu--plain.ant-menu-vertical .ant-menu-item,
+.vben-menu--plain.ant-menu-vertical .ant-menu-submenu-title {
+  width: 100%;
+  margin-inline: 0;
+  border-radius: 0;
+}
+
+.vben-menu.ant-menu-dark,
+.vben-menu.ant-menu-dark .ant-menu-sub {
+  background: transparent !important;
+}
+
+.vben-menu .ant-menu-title-content {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.vben-menu .ant-menu-title-content > .vben-menu-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vben-menu.ant-menu-inline-collapsed .vben-menu-badge {
+  display: none;
+}
+
+/* جدول‌ها */
+.ant-table-wrapper .ant-table-pagination.ant-pagination {
+  margin-bottom: 0;
+}
+
+/* InputNumber تمام عرض در فرم‌های vben */
+.vben-form .ant-input-number,
+.vben-form .ant-picker {
+  width: 100%;
+}
+
+/* منوی جمع‌شده با نمایش عنوان (collapsedShowTitle) */
+.vben-menu--collapse-show-title.ant-menu-vertical > .ant-menu-item,
+.vben-menu--collapse-show-title.ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title {
+  height: auto;
+  padding-inline: 4px !important;
+  margin-inline: 4px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.vben-menu--collapse-show-title.ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title .ant-menu-submenu-arrow {
+  display: none;
+}
+
+.vben-menu--collapse-show-title .ant-menu-title-content {
+  justify-content: center;
+}
+
+/* مودال تمام‌صفحه */
+.vben-modal--fullscreen {
+  top: 0 !important;
+  max-width: 100vw !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+}
+
+.vben-modal--fullscreen .ant-modal-container,
+.vben-modal--fullscreen .ant-modal-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-radius: 0;
+}
+
+.vben-modal--fullscreen .ant-modal-body {
+  flex: 1;
+}

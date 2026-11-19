@@ -1,0 +1,142 @@
+/*
+ * انیمیشن‌های ورود صفحه (نسخه‌ی React):
+ * به‌جای کلاس‌های enter/leave در Vue، کانتینر صفحه هنگام mount کلاس
+ * `page-transition-{name}` می‌گیرد و انیمیشن ورود اجرا می‌شود.
+ * جهت انیمیشن‌های افقی در RTL برعکس می‌شود.
+ */
+
+.page-transition-fade {
+  animation: vben-fade-in 0.25s ease-in-out both;
+}
+
+.page-transition-fade-slide {
+  animation: vben-fade-slide-in 0.3s ease-out both;
+}
+
+.page-transition-fade-up {
+  animation: vben-fade-up-in 0.25s ease-out both;
+}
+
+.page-transition-fade-down {
+  animation: vben-fade-down-in 0.3s ease-out both;
+}
+
+@keyframes vben-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes vben-fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(calc(-30px * var(--vben-dir-factor, 1)));
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes vben-fade-up-in {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes vben-fade-down-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* اسلاید از بالا (صفحه‌ی قفل) */
+.slide-up-enter {
+  animation: vben-slide-up-in 0.25s cubic-bezier(0.25, 0.8, 0.5, 1) both;
+}
+
+@keyframes vben-slide-up-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* انیمیشن مسیرنما */
+.breadcrumb-enter {
+  animation: vben-breadcrumb-in 0.4s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
+@keyframes vben-breadcrumb-in {
+  from {
+    opacity: 0;
+    transform: translateX(calc(30px * var(--vben-dir-factor, 1)))
+      skewX(calc(-30deg * var(--vben-dir-factor, 1)));
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition-fade,
+  .page-transition-fade-slide,
+  .page-transition-fade-up,
+  .page-transition-fade-down,
+  .slide-up-enter,
+  .breadcrumb-enter {
+    animation-duration: 0ms;
+  }
+}

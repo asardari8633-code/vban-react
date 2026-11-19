@@ -1,0 +1,111 @@
+{
+  "formRules": {
+    "required": "لطفاً {0} را وارد کنید",
+    "selectRequired": "لطفاً {0} را انتخاب کنید",
+    "minLength": "{0} باید حداقل {1} کاراکتر باشد",
+    "maxLength": "{0} حداکثر می‌تواند {1} کاراکتر باشد",
+    "length": "{0} باید {1} کاراکتر باشد",
+    "alreadyExists": "{0} «{1}» از قبل وجود دارد",
+    "startWith": "{0} باید با «{1}» شروع شود",
+    "invalidURL": "لطفاً یک آدرس معتبر وارد کنید",
+    "sizeLimit": "حجم فایل نمی‌تواند بیشتر از {0} مگابایت باشد",
+    "previewWarning": "امکان باز کردن فایل نیست؛ آدرس یا پیش‌نمایشی در دسترس نیست"
+  },
+  "actionTitle": {
+    "edit": "ویرایش {0}",
+    "create": "ایجاد {0}",
+    "delete": "حذف {0}",
+    "view": "مشاهده‌ی {0}"
+  },
+  "actionMessage": {
+    "deleteConfirm": "آیا از حذف {0} اطمینان دارید؟",
+    "deleting": "در حال حذف {0} ...",
+    "deleteSuccess": "{0} با موفقیت حذف شد",
+    "operationSuccess": "عملیات با موفقیت انجام شد",
+    "operationFailed": "عملیات ناموفق بود"
+  },
+  "placeholder": {
+    "input": "لطفاً وارد کنید",
+    "select": "لطفاً انتخاب کنید",
+    "upload": "برای بارگذاری کلیک کنید"
+  },
+  "captcha": {
+    "title": "لطفاً تأیید امنیتی را کامل کنید",
+    "sliderSuccessText": "تأیید شد",
+    "sliderDefaultText": "برای تأیید بکشید",
+    "sliderRotateDefaultTip": "برای تازه‌سازی روی تصویر کلیک کنید",
+    "sliderRotateFailTip": "تأیید ناموفق بود",
+    "sliderRotateSuccessTip": "تأیید موفق، زمان: {0} ثانیه",
+    "refreshAriaLabel": "تازه‌سازی کپچا",
+    "confirm": "تأیید",
+    "clickInOrder": "لطفاً به ترتیب کلیک کنید"
+  },
+  "iconPicker": {
+    "placeholder": "یک آیکون انتخاب کنید",
+    "search": "جست‌وجوی آیکون..."
+  },
+  "jsonViewer": {
+    "copy": "کپی",
+    "copied": "کپی شد"
+  },
+  "fallback": {
+    "pageNotFound": "اوه! صفحه پیدا نشد",
+    "pageNotFoundDesc": "متأسفیم، صفحه‌ای که دنبالش بودید پیدا نشد.",
+    "forbidden": "اوه! دسترسی ممنوع است",
+    "forbiddenDesc": "متأسفیم، شما اجازه‌ی دسترسی به این صفحه را ندارید.",
+    "internalError": "اوه! مشکلی پیش آمد",
+    "internalErrorDesc": "متأسفیم، سرور با خطا مواجه شد.",
+    "offline": "صفحه‌ی آفلاین",
+    "offlineError": "اوه! خطای شبکه",
+    "offlineErrorDesc": "متأسفیم، اتصال به اینترنت برقرار نیست. اتصال خود را بررسی کنید.",
+    "comingSoon": "به‌زودی",
+    "http": {
+      "requestTimeout": "زمان درخواست به پایان رسید. لطفاً بعداً دوباره تلاش کنید.",
+      "networkError": "خطای شبکه رخ داد. اتصال اینترنت خود را بررسی کرده و دوباره تلاش کنید.",
+      "badRequest": "درخواست نامعتبر. ورودی خود را بررسی کرده و دوباره تلاش کنید.",
+      "unauthorized": "احراز هویت نشده. برای ادامه وارد شوید.",
+      "forbidden": "ممنوع. شما اجازه‌ی دسترسی به این منبع را ندارید.",
+      "notFound": "یافت نشد. منبع درخواستی پیدا نشد.",
+      "internalServerError": "خطای داخلی سرور. مشکلی در سمت ما رخ داد؛ لطفاً بعداً دوباره تلاش کنید."
+    }
+  },
+  "widgets": {
+    "document": "مستندات",
+    "qa": "پرسش و پاسخ",
+    "setting": "تنظیمات",
+    "logoutTip": "آیا می‌خواهید خارج شوید؟",
+    "viewAll": "مشاهده‌ی همه‌ی پیام‌ها",
+    "notifications": "اعلان‌ها",
+    "markAllAsRead": "علامت‌گذاری همه به‌عنوان خوانده‌شده",
+    "clearNotifications": "پاک کردن",
+    "checkUpdatesTitle": "نسخه‌ی جدید در دسترس است",
+    "checkUpdatesDescription": "برای دریافت آخرین نسخه، صفحه را تازه‌سازی کنید",
+    "fullscreen": "تمام‌صفحه",
+    "exitFullscreen": "خروج از تمام‌صفحه",
+    "themeToggle": "تغییر تم",
+    "search": {
+      "title": "جست‌وجو",
+      "searchNavigate": "جست‌وجوی منو",
+      "select": "انتخاب",
+      "navigate": "پیمایش",
+      "close": "بستن",
+      "noResults": "نتیجه‌ای یافت نشد",
+      "noRecent": "تاریخچه‌ی جست‌وجو خالی است",
+      "recent": "تاریخچه‌ی جست‌وجو"
+    },
+    "lockScreen": {
+      "title": "قفل صفحه",
+      "screenButton": "قفل",
+      "password": "رمز عبور",
+      "placeholder": "لطفاً رمز قفل را وارد کنید",
+      "unlock": "برای باز کردن قفل کلیک کنید",
+      "errorPasswordTip": "رمز عبور اشتباه است، دوباره وارد کنید",
+      "backToLogin": "بازگشت به صفحه‌ی ورود",
+      "entry": "ورود به سامانه"
+    },
+    "timezone": {
+      "setTimezone": "تنظیم منطقه‌ی زمانی",
+      "setSuccess": "منطقه‌ی زمانی با موفقیت تنظیم شد"
+    }
+  }
+}

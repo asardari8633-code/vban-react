@@ -1,0 +1,37 @@
+{
+  "name": "@vben/layouts",
+  "version": "5.7.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@vben/common-ui": "*",
+    "@vben/constants": "*",
+    "@vben/hooks": "*",
+    "@vben/icons": "*",
+    "@vben/locales": "*",
+    "@vben/preferences": "*",
+    "@vben/stores": "*",
+    "@vben/types": "*",
+    "@vben/utils": "*",
+    "@vben-core/base-ui": "*",
+    "@vben-core/layout-ui": "*",
+    "@vben-core/menu-ui": "*",
+    "@vben-core/tabs-ui": "*",
+    "@vben-core/preferences": "*",
+    "@vben-core/shared": "*",
+    "react-router": "^7.18.6",
+    "zustand": "^5.1.0",
+    "@vben-core/composables": "*"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1",
+    "antd": "^6.7.1"
+  }
+}

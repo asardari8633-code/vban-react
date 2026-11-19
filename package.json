@@ -1,0 +1,35 @@
+{
+  "name": "vben-admin-react-monorepo",
+  "version": "5.7.0",
+  "private": true,
+  "description": "Vben Admin rebuilt with React + Ant Design + TypeScript (Persian / RTL)",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "internal/*",
+    "packages/*",
+    "packages/@core/*",
+    "packages/@core/base/*",
+    "packages/@core/ui-kit/*",
+    "packages/effects/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n mock,web -c magenta,cyan \"npm:dev:mock\" \"npm:dev:antd\"",
+    "dev:antd": "npm run dev -w @vben/web-antd",
+    "dev:mock": "npm run dev -w @vben/backend-mock",
+    "build": "npm run build -w @vben/web-antd",
+    "build:demo": "npm run build:demo -w @vben/web-antd",
+    "preview": "npm run preview -w @vben/web-antd",
+    "start:mock": "npm run start -w @vben/backend-mock",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "concurrently": "^10.0.7",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
